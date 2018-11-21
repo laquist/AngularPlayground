@@ -1,0 +1,21 @@
+<h2>Data Binding</h2>
+
+<ul>
+  <li>
+    Firstname: 
+    <span>{{ firstName }}</span>
+  </li>
+
+  <li>
+    Lastname: 
+    <span>{{ lastName }}</span>
+  </li>
+
+  <li>
+    Is button clicked?
+    <!-- <span [style.color]="clicked ? 'green': 'red'"> {{ clicked }}</span> -->
+    <span class="isClicked" [class.true]="clicked" > {{ clicked }}</span>
+  </li>
+</ul>
+
+<button (click)="click()">Button</button>
